@@ -25,12 +25,12 @@
 ## 💡 How to Use
 
 1.   Clone the repository:
-     ```
-        git clone https://github.com/Amritasri10/Delicious-Delight.git
-    ``` 
-2. Navigate to the project directory and open  ```index.html ``` in your        browser.
+   
+     ``` git clone https://github.com/Amritasri10/Delicious-Delight.git  ```
+     
+3. Navigate to the project directory and open  ```index.html ``` in your browser.
 
-3. Explore the recipes and enjoy cooking!
+4. Explore the recipes and enjoy cooking!
 
 ---
 
@@ -38,7 +38,7 @@
 
 Here’s a preview of the **Delicious Delight** website:
 
-![Website Screenshot](images/index.html.png)
+![Website Screenshot](images/index.html .png)
 
 ---
 
