@@ -38,7 +38,7 @@
 
 Here’s a preview of the **Delicious Delight** website:
 
-![Website Screenshot](images/index.html .png)
+![Website Screenshot](images/screenshot.png)
 
 ---
 
