@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Delight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+  <header>
+  <div class="container">
+    <h1 class="logo">Delicious Delight</h1>
+    <nav class="nav-list">
+      <div class="menu-icon">&#9776;</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+
+  <section class="hero">
+    <div class="hero-section">
+      <h2>Welcome to FlavorFusion Collections</h2>
+      <p>Search for your favorite recipes and discover new flavors from around the world.</p>
+
+      <form class="search-box" onsubmit="searchRecipe(event)">
+        <input type="text" id="searchInput" placeholder="Search recipe" />
+        <button type="submit">Search</button>
+      </form>
+      
+      <div class="results" id="results"></div>
+    </div>
+  </section>
+
+
+<!-- Recipe Section -->
+  <section class ="recipes" > 
+    <section id="veg-curry">
+            <h1 class="heding">Featured Recipes</h1>
+      <div class="recipe-section">
+        <div class="recipe-card">
+          <img src="images/upma-recipe.webp" alt="Upma">
+          <h2>Upma &nbsp;&nbsp;</h2><br><br>
+          <button onclick="openModal('upma')">View Recipe</button>
+        </div>
+        
+        <div class="recipe-card">
+          <img src="images/aloo-gobi-680x1020.webp" alt="Aloo Gobi">
+          <h2>Aloo Gobi</h2><br><br>
+          <button onclick="openModal('alooGobi')">View Recipe</button>
+        </div>
+        
+        <div class="recipe-card">
+          <img src="images/chana-masala-680x1020.webp" alt="Chana Masala">
+          <h2>Chana Masala</h2><br><br>
+          <button onclick="openModal('chanaMasala')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/paneer-butter-masala.webp" alt="Paneer Butter Masala">
+          <h2>Paneer Butter</h2><br><br>
+          <button onclick="openModal('paneerButterMasala')">View Recipe</button>
+
+        </div> 
+
+        <div class="recipe-card">
+          <img src="images/samosa.webp" alt="Paneer Butter Masala">
+          <h2>samosa</h2><br><br>
+          <button onclick="openModal('samosa')">View Recipe</button>
+        </div> 
+
+        <div class="recipe-card">
+          <img src="images/butter-chicken-murgh-makhani.webp" alt="Paneer Butter Masala">
+          <h2>butter chicken</h2><br><br>
+          <button onclick="openModal('butterchicken')">View Recipe</button>
+        </div> 
+      </div>
+    </section>
+
+    <section id="dal">
+            <h1 class="heding">Dal Recipes</h1>
+      <div class="recipe-section">
+        <div class="recipe-card">
+          <img src="images/dal-fry-dal-recipe.webp" alt="Dal Fry">
+          <h2>Dal Fry</h2>
+          <button onclick="openModal('dalfrydal')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/chana-dal.webp" alt="Chana Dal">
+          <h2>Chana Dal</h2>
+          <button onclick="openModal('chanadal')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/green-moong-dal-green-gram-curry.webp" alt="Green Moong Dal">
+          <h2>Green Moong Dal</h2>
+          <button onclick="openModal('greenmoongdal')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/masoor-dal.webp" alt="Masoor Dal">
+          <h2>Masoor Dal</h2>
+          <button onclick="openModal('masoordal')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/moong-dal-1024x1536.webp" alt="Moong Dal">
+          <h2>Moong Dal</h2>
+          <button onclick="openModal('moongdal')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/sambar-recipe-1024x1536.webp" alt="Sambar">
+          <h2>Sambar Recipe</h2>
+          <button onclick="openModal('sambar')">View Recipe</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="rice">
+            <h1 class="heding">Rice Recipes</h1>
+    <div class="recipe-section">
+      <div class="recipe-card">
+        <img src="images/basmati-rice-1024x1536.webp" alt="Basmati Rice">
+        <h2>Basmati Rice</h2>
+        <button onclick="openModal('basmatirice')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/fried-rice-1024x1536.webp" alt="Fried Rice">
+        <h2> VegFried Rice</h2>
+        <button onclick="openModal('vegfriedrice')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/ghee-rice-1024x1536.webp" alt="Ghee Rice"> 
+        <h2>Ghee Rice</h2>
+        <button onclick="openModal('gheerice')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/jeera-rice-recipe-1024x1536.webp" alt="Jeera Rice">
+        <h2>Jeera Rice</h2>
+        <button onclick="openModal('jeerarice')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/tomato-rice-1024x1536.webp" alt="Tomato Rice">
+        <h2>Tamato Rice</h2>
+        <button onclick="openModal('tamatorice')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/khichdi-recipe-1024x1536.webp" alt="Khichdi">
+        <h2>Khichdi</h2>
+        <button onclick="openModal('khichdi')">View Recipe</button>
+
+      </div>
+
+    </div>
+    </section>
+
+    <section id="sweets">
+          <h1 class="heding">Sweet Recipes</h1>
+    <div class="recipe-section">
+      <div class="recipe-card">
+        <img src="images/gulab-jamun-1024x1536.webp" alt="Gulab Jamun">
+        <h2>Gulab Jamun</h2>
+        <button onclick="openModal('gulabjamun')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/besan-ladoo-1024x1536.webp" alt="Besan Ladoo">
+        <h2>Besan Ladoo</h2>
+        <button onclick="openModal('besanladoo')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/besan-burfi-1024x1536.webp" alt="BEsan Burfi">
+        <h2>Besan Burfi</h2>
+        <button onclick="openModal('besanburfi')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/kaju-katli-kaju-barfi-1024x1536.webp" alt="Kaju Katli">
+        <h2>Kaju Katli</h2>
+        <button onclick="openModal('kajukatli')">View Recipe</button>
+
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/kheer-recipe-1024x1536.webp" alt="Kheer">
+        <h2>Kheer</h2>
+        <button onclick="openModal('kheer')">View Recipe</button>
+ 
+      </div>
+
+      <div class="recipe-card">
+        <img src="images/jalebi-1024x1536.webp" alt="Jalebi">
+        <h2>Jalebi</h2>
+        <button onclick="openModal('jalebi')">View Recipe</button>
+      </div>
+    </div>
+    </section>
+
+    <section id="breakfast">
+            <h1 class="heding">Breakfast Recipes</h1>
+      <div class="recipe-section">
+        <div class="recipe-card">
+          <img src="images/masala-dosa-recipe.webp" alt="Masala Dosa">
+          <h2>Masala Dosa</h2>
+          <button onclick="openModal('masalaDosa')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/rava-dosa.webp" alt="Rava Dosa">
+          <h2>Rava Dosa</h2>
+          <button onclick="openModal('ravaDosa')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/medu-vada-1.webp" alt="Medu Vada">
+          <h2>Medu Vada</h2>
+          <button onclick="openModal('meduVada')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/rava-idli-instant.webp" alt="Rava Idli">
+          <h2>Rava Idli</h2>
+          <button onclick="openModal('ravaIdli')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/masala-pasta.webp" alt="Masala Pasta">
+          <h2>Masala Pasta</h2>
+          <button onclick="openModal('masalaPasta')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/gobi-manchurian.webp" alt="Gobi Manchurian">
+          <h2>Gobi Manchurian</h2>
+          <button onclick="openModal('gobiManchurian')">View Recipe</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- explore to find  -->
+  <section class="explore-section">
+  <h2>Explore To Find</h2>
+  <div class="categories">
+    <div class="category" onclick="scrollToSection('breakfast')">
+      <img src="images/onion-bhaji.webp" alt="Breakfast">
+      <p>Breakfast</p>
+    </div>
+    <div class="category" onclick="scrollToSection('dal')">
+      <img src="images/chana-dal.webp" alt="dal">
+      <p>Dal</p>
+    </div>
+    <div class="category" onclick="scrollToSection('rice')">
+      <img src="images/biryani-rice-kuska.webp" alt="Rice">
+      <p>Rice</p>
+    </div>
+    <div class="category" onclick="scrollToSection('veg-curry')">
+      <img src="images/palak-paneer.webp" alt="Veg Curry">
+      <p>Veg Curry</p>
+    </div>
+    <div class="category" onclick="scrollToSection('sweets')">
+      <img src="images/rasmalai.webp" alt="Sweet">
+      <p>Sweet</p>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Modal -->
+<div id="recipeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="modalContent">
+      <!-- Recipe content will be injected here -->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p>&copy; 2025 Delicious Delights. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
