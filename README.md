@@ -46,7 +46,12 @@ Here’s a preview of the **Delicious Delight** website:
 
 This project is open-source and free to use under the MIT License.
 
+---
 
+## 🙌 Author
+
+Connect with me on 
+[LinkedIn](https://www.linkedin.com/in/amrita-srivastava10/) | [GitHub](https://github.com/Amritasri10)
 
 
 
